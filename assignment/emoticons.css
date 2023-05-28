@@ -1,0 +1,7 @@
+.selector:after {
+    content: "\1F604";
+  }
+
+  .selector:after {
+    content: "\1F602";
+  }

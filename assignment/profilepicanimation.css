@@ -1,0 +1,18 @@
+.profilepic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  animation: profilepic-animation 6s infinite;
+}
+
+@keyframes profilepic-animation {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-30deg);
+  }
+  50%, 75% {
+    transform: rotate(30deg);
+  }
+}

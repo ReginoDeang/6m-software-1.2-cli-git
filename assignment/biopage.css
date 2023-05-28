@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  padding: 50px;
+  font-family: Arial, sans-serif;
+}
+
+.biopage {
+  display: flex;
+  align-items: flex-start;
+}
+
+.profilepicture {
+  margin-right: 20px;
+}
+
+.profilepic {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  animation: profilepic-enlarge 3s infinite alternate, profilepic-rotation 6s infinite;
+}
+
+@keyframes profilepic-enlarge {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes profilepic-rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-30deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+h2, h3, h4, h5 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.about-me-heading,
+.about-me-list,
+.about-me-description {
+  margin-top: 0;
+}
+
+.about-me-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.contact-info {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.about-me1 {
+  text-align: left;
+  margin-top: 10px;
+  clear: left;
+  margin-bottom: 20px;
+}
